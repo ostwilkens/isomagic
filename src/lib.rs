@@ -169,7 +169,7 @@ impl<'a> ModelRenderer<'a> {
         let g = g.saturating_sub(subtract);
         let b = b.saturating_sub(subtract);
 
-        Rgba { data: [r, g, b, a] }
+        Rgba { 0: [r, g, b, a] }
     }
 
     fn create_image<S, X, Y>(&mut self, sort: S, map_x: X, map_y: Y) -> RgbaImage
