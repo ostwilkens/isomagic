@@ -31,26 +31,26 @@ pub struct Options {
         long = "model",
         help = "Which model in the voxel file to render [default: all]"
     )]
-    model: Option<usize>,
+    pub model: Option<usize>,
     #[structopt(
         short = "s",
         long = "side",
         help = "Which side of the model to render [default: all]"
     )]
-    side: Option<Side>,
+    pub side: Option<Side>,
     #[structopt(
         short = "v",
         long = "view",
         help = "Which perspective of the model to render [default: all]"
     )]
-    view: Option<View>,
+    pub view: Option<View>,
     #[structopt(
         short = "o",
         long = "output",
         default_value = ".",
         help = "The output directory to write files to"
     )]
-    output: String,
+    pub output: String,
 }
 
 pub struct Renderer {
