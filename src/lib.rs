@@ -14,7 +14,7 @@ use std::fs::create_dir_all;
 use std::path::PathBuf;
 
 pub mod enums;
-use enums::{Side, View};
+pub use enums::{Side, View};
 
 error_chain! {
     foreign_links {
