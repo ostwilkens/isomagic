@@ -139,7 +139,7 @@ impl<'a> ModelRenderer<'a> {
     }
 
     fn colour(&self, index: u8, subtract: u8) -> Rgba<u8> {
-        let colour = self.palette[index as usize - 1];
+        let colour = self.palette[index as usize];
         let r = (colour % 256) as u8;
         let g = ((colour >> 8)  % 256) as u8;
         let b = ((colour >> 16) % 256) as u8;
